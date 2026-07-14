@@ -60,7 +60,6 @@ double userHeight2 = userHeight / 100;
 double bmi = heightMeter / (userHeight2 * userHeight2);
 
 
-Console.WriteLine("假設體重是 60 公斤");
 Console.WriteLine("你的 BMI 約為：" + bmi);
 
 String bmiStatus;
@@ -83,5 +82,7 @@ else
 }
 
 Console.WriteLine("你屬於" + bmiStatus);
+Console.WriteLine("真他媽在搞");
 Console.WriteLine("程式結束，請按任意鍵關閉...");
+
 Console.ReadKey();
