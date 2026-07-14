@@ -64,3 +64,4 @@ double bmi = heightMeter / (userHeight2 * userHeight2);
 
 Console.WriteLine("假設體重是 60 公斤");
 Console.WriteLine("你的 BMI 約為：" + bmi);
+Console.WriteLine("躁");
