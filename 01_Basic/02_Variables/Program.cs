@@ -50,9 +50,6 @@ int nextYearAge = userAge + 1;
 Console.WriteLine("明年你會是：" + nextYearAge + " 歲");
 
 Console.WriteLine();
-Console.WriteLine("程式執行結束，請按任意鍵關閉...");
-Console.ReadKey();
-Console.WriteLine();
 Console.WriteLine("=== BMI ===");
 
 Console.Write("請輸入你的體重：");
@@ -62,5 +59,29 @@ double heightMeter = Convert.ToDouble(Console.ReadLine());
 double userHeight2 = userHeight / 100;
 double bmi = heightMeter / (userHeight2 * userHeight2);
 
+
 Console.WriteLine("假設體重是 60 公斤");
 Console.WriteLine("你的 BMI 約為：" + bmi);
+
+String bmiStatus;
+
+if (bmi < 18.5)
+{
+    bmiStatus = "體重過輕";
+}
+else if (bmi < 24)
+{
+    bmiStatus = "健康範圍";
+}
+else if (bmi < 27)
+{
+    bmiStatus = "體重過重";
+}
+else
+{
+    bmiStatus = "肥胖";
+}
+
+Console.WriteLine("你屬於" + bmiStatus);
+Console.WriteLine("程式結束，請按任意鍵關閉...");
+Console.ReadKey();
